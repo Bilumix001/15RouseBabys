@@ -1,0 +1,42 @@
+.reproductor {
+    display: flex;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    justify-content: center;
+    border-radius: 10px;
+    width: 60vw;
+    margin: 0 auto;
+    flex-direction: column;
+}
+.reproductor img{
+    width: 450px;
+    margin: 0 auto;
+    margin-bottom: 25px;
+}
+.texto {
+    font-family: "Great Vibes", serif;
+    font-size: 72px;
+    margin-bottom: 25px;
+    display: block;
+}
+.controles {
+    display: block;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.boton {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 60px;
+    cursor: pointer;
+    transition: transform 0.2s;
+    margin: 0 1vw;
+}
+
+.boton:hover {
+    transform: scale(1.2);
+}

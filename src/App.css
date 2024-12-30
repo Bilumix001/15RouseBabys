@@ -1,0 +1,626 @@
+.animated {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.animated.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+img {
+  user-select: none; /* Evita la selección de texto/elementos */
+  pointer-events: none; /* Evita la interacción con el puntero */
+}
+
+
+
+.fondo {
+  background-color: #000;
+  outline: solid #9d1523 6px;
+  width: 90vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-bottom: 50px;
+  position: relative;
+}
+.title {
+  margin-top: 120px;
+  width: 100%;
+  display: block;
+}
+.title p {
+  margin: 0;
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center; /* Centrar horizontalmente */
+  align-items: center; /* Centrar verticalmente */
+  text-align: center;
+  color: #a6040f;
+}
+.title .rombo1{
+  display: block;
+  width: 100px;
+  margin-left: 14vw;
+}
+.title .rombo2{
+  width: 80px;
+  left: 75vw;
+  display: block;
+  margin-left: 70vw;
+}
+.title .curvita{
+  display: block;
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 50px;
+  width: 50vw;
+}
+.title .XV {
+  font-size: 175px;
+  font-family: "Arapey", serif;
+  height: auto;
+}
+.title .nombre {
+  font-size: 225px;
+  font-family: "Great Vibes", serif;
+}
+.title .nombre section .corazon1{
+  position: absolute;
+  width: 80px;
+  top: 6vh;
+  left: -7vw;
+}
+.title .nombre section .corazon2{
+  position: absolute;
+  width: 80px;
+  top: 6vh;
+  right: -9vw;
+}
+
+.fondo .MarcoRosas {
+    position: absolute;
+    width: 45vw;
+    height: auto;
+    pointer-events: none;
+    top: -8vh;
+}
+.fondo .MarcoRosas.derecha{
+    z-index: 10;
+    rotate: 180deg;
+    right: -3.5vw;
+}
+.fondo .MarcoRosas.izquierda {
+    z-index: 11;
+    rotate: 90deg;
+    left: -5vw;
+}
+  
+.fondo .Adultos {
+  width: 80vw;
+  height: auto;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center; /* Centrar horizontalmente */
+  align-items: center;
+  flex-direction: column;
+  color: #fff;
+  font-family: "Arapey", serif;
+  font-size: 32px;
+}
+.fondo .Adultos section .title {
+  color: #daa520;
+  font-family: "Great Vibes", serif;
+  font-size: 80px;
+  margin-bottom: 50px;
+  margin-top: 120px;
+}
+.fondo .Adultos section .img1{
+  width: 300px;
+  position: absolute;
+  left: -30%;
+  top: -10%;
+}
+.fondo .Adultos section .img2{
+  width: 300px;
+  position: absolute;
+  right: -55%;
+  top: 0%;
+  transform: scaleX(-1);
+}
+.fondo .Adultos section p {
+  width: 100%;
+  display: flex;
+  justify-content: center; /* Centrar horizontalmente */
+  align-items: center;
+  flex-direction: column;
+  margin: 5px;
+}
+.fondo .Adultos > *:last-child {
+  margin: 100px auto;
+  color: #a6040f;
+  font-family: "Great Vibes", serif;
+  font-size: 64px;
+}
+.fecha {
+  margin: 0 auto;
+  width: 60vw;
+  height: auto;
+  display: flex;
+  justify-content: center; /* Centrar horizontalmente */
+  align-items: center;
+  flex-direction: column;
+  color: #a6040f;
+  
+}
+.fecha section {
+  margin: 0 auto;
+  width: 60vw;
+  height: auto;
+  display: flex;
+  justify-content: center; /* Centrar horizontalmente */
+  align-items: center;
+  flex-direction: column;
+  color: #a6040f;
+  
+}
+.fecha section p {
+  margin: 15px 0;
+}
+.fecha section .fechita{
+  font-size: 64px;
+}
+.welcome p {
+  font-family: "Great Vibes", serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #a6040f;
+  width: 100%;
+  margin: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 120px;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+.welcome section{
+  display: flex;
+  justify-content: center;
+}
+.welcome img{
+  width: 500px;
+}
+.info{
+  margin-top: 0px;
+}
+
+.info p {
+  font-family: "Great Vibes", serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #daa520;
+  width: 100%;
+  margin: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 80px;
+  margin-top: 80px;
+  text-align: center;
+}
+
+.info .icon {
+  color: #a6040f;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 180px;
+}
+
+.info .name {
+  margin: 40px auto;
+  font-family: "Arapey", serif;
+  font-size: 25px;
+  max-width: 60vw;
+  color: #daa520;
+}
+
+.info .direction {
+  margin: 0;
+  font-family: "Arapey", serif;
+  font-size: 25px;
+  color: #fff;
+  max-width: 60vw;
+}
+.info .hour p{
+    color: #000;
+}
+
+.centrar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.dir {
+  margin: 20px;
+  background-color: #fff;
+  border-radius: 15px;
+  font-size: 24px;
+  font-family: "Arapey", serif;
+  border-style: none;
+  cursor: pointer;
+}
+
+.dir:hover {
+  background-color: #f7b819;
+}
+
+.hour {
+  background-color: #a6040f;
+  border-radius: 20px;
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.hour p {
+  font-family: "Arapey", serif;
+  font-weight: 400;
+  font-size: 32px;
+  margin: 0;
+  padding: 10px 10px 10px 10px;
+}
+
+.burbuja {
+  margin-top: 50px;
+}
+.burbuja section img{
+  display: flex;
+  justify-content: center;
+  width: 500px;
+}
+
+.burbuja .icon {
+  color: #a6040f;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 120px;
+  margin: 40px auto;
+}
+
+.burbuja h2 {
+  font-family: "Great Vibes", serif;
+  color: #daa520;
+  font-size: 100px;
+  font-weight: 400;
+  margin: 0;
+}
+
+.burbuja .icon2 {
+  flex-direction: row;
+}
+
+.burbuja p {
+  margin: 0;
+  color: #fff;
+  font-family: "Arapey", serif;
+  max-width: 60vw;
+  text-align: center;
+  font-size: 30px;
+  overflow: hidden;
+  margin-top: 10px;
+}
+.final{
+  width: 90%;
+  font-family: "Great Vibes", serif;
+  font-size: 125px;
+  color: #a6040f;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 100px auto;
+  
+}
+.final .img1{
+  position: absolute;
+  left: -5vw;
+  width: 40%;
+  bottom: -10vh;
+}
+.final .img2{
+  position: absolute;
+  right: -3.5vw;
+  width: 40%;
+  transform: scaleX(-1);
+  bottom: -10vh;
+}
+@media screen and (max-width: 1200px){
+  .title .XV{
+    font-size: 125px;
+  }
+  .title .nombre{
+    font-size: 150px;
+  }
+  .title .nombre section .corazon1{
+    top: 2vw;
+  }
+  .title .nombre section .corazon2{
+    top: 2vw;
+  }
+  .title .rombo1{
+    width: 80px;
+  }
+  .title .rombo2{
+    width: 60px;
+  }
+  .fondo .Adultos section .img1 {
+    width: 275px;
+  }
+  .fondo .Adultos section .img2 {
+    width: 275px;
+  }
+  .fondo .Adultos section p{
+    font-size: 30px;
+  }
+  .fondo .Adultos section .title{
+    font-size: 60px;
+  }
+  .fondo .Adultos section .waiting{
+    font-size: 50px;
+  }
+  .burbuja h2{
+    font-size: 80px;
+  }
+  .burbuja p{
+    font-size: 22px;
+  }
+  .info .icon{
+    font-size: 150px;
+  }
+  .info .name{
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 900px){
+  .fondo{
+    width: 85vw;
+  }
+  .fondo .MarcoRosas{
+    width: 47vw;
+    top: -5vh;
+  }
+  .fondo .MarcoRosas.derecha{
+    right: -5vw;
+  }
+  .title .rombo1{
+    width: 50px;
+  }
+  .title .XV{
+    font-size: 70px;
+  }
+  .title .rombo2{
+    width: 35px;
+  }
+  .title .curvita{
+    width: 40vw;
+  }
+  .title .nombre{
+    font-size: 85px;
+  }
+  .title .nombre section .corazon1{
+    width: 60px;
+    top: -1.5vh;
+    left: -9vw;
+  }
+  .title .nombre section .corazon2{
+    width: 60px;
+    top: -1.5vw;
+    right: -12vw;
+  }
+  .reproductor .texto{
+    font-size: 40px;
+  }
+  .reproductor img{
+    width: 300px;
+  }
+  .reproductor .boton{
+    font-size: 36px;
+  }
+  .fondo .Adultos section .img1 {
+    width: 180px;
+    top: 3%;
+    
+  }
+  .fondo .Adultos section .img2 {
+    width: 180px;
+    top: 6%;
+    right: -40%;
+  }
+  .fondo .Adultos section p{
+    font-size: 20px;
+  }
+  .fondo .Adultos section .title{
+    font-size: 45px;
+  }
+  .fondo .Adultos section .waiting{
+    font-size: 36px;
+  }
+
+  .fecha section .fechita{
+    font-size: 45px;
+  }
+  .title_CounterDown{
+    font-size: 75px;
+  }
+  .cuerpa .container div p{
+    font-size: 22px;
+  }
+  .cuerpa .container div span{
+    font-size: 50px;
+  }
+  .welcome img{
+    margin-top: 10%;
+    width: 300px;
+  }
+  .info p{
+    font-size: 60px;
+  }
+  .info .name{
+    font-size: 18px;
+  }
+  .info .direction{
+    font-size: 20px;
+  }
+  .hour p{
+    font-size: 30px;
+  }
+  .burbuja .icon{
+    font-size: 90px;
+  }
+  .burbuja h2{
+    font-size: 50px;
+  }
+  .burbuja p{
+    font-size: 16px;
+  }
+  .burbuja section img{
+    width: 300px;
+  }
+  .final{
+    font-size: 60px;
+  }
+  .final .img1{
+    width: 45vw;
+  }
+  .final .img2{
+    width: 45vw;
+    right: -5vw
+  }
+}
+@media screen and (max-width: 550px){
+  .title{
+    margin-top: 50px;
+  }
+  .title .rombo1{
+    width: 35px;
+  }
+  .title .XV{
+    font-size: 50px;
+  }
+  .title .rombo2{
+    width: 25px;
+  }
+  .title .curvita{
+    margin-top: 0;
+    width: 50vw;
+  }
+  .title .nombre{
+    font-size: 60px;
+  }
+  .title .nombre section .corazon1{
+    width: 36px;
+    top: 0vh;
+    left: -12vw;
+  }
+  .title .nombre section .corazon2{
+    width: 36px;
+    top: 0vw;
+    right: -14vw;
+  }
+  .reproductor .texto{
+    font-size: 25px;
+  }
+  .reproductor img{
+    width: 150px;
+  }
+  .reproductor .boton{
+    font-size: 24px;
+  }
+  .fondo .Adultos section p{
+    font-size: 15px;
+  }
+  .fondo .Adultos section .title{
+    font-size: 25px;
+  }
+  .fondo .Adultos section .img1 {
+    width: 100px;
+    top: 14%;
+    left: -20%;
+  }
+  .fondo .Adultos section .img2 {
+    width: 100px;
+    top: 15%;
+    right: -15%;
+  }
+  .fondo .Adultos section .waiting{
+    font-size: 24px;
+  }
+  .fecha section .fechita{
+    font-size: 35px;
+  }
+  .title_CounterDown{
+    font-size: 50px;
+  }
+  .cuerpa .container div p{
+    font-size: 15px;
+  }
+  .cuerpa .container div span{
+    font-size: 35px;
+  }
+  .cuerpa{
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+  .cuerpa .container{
+    margin-top: 0;
+  }
+  .burbuja section img{
+    width: 200px;
+  }
+  .welcome img{
+    width: 200px;
+  }
+  .info p{
+    font-size: 50px;
+  }
+  .info .icon{
+    font-size: 100px;
+  }
+  .info .name{
+    font-size: 15px;
+    margin: 15px auto;
+  }
+  .info .direction{
+    font-size: 15px;
+  }
+  .hour p{
+    font-size: 20px;
+  }
+  .burbuja h2{
+    font-size: 40px;
+  }
+  .burbuja p{
+    font-size: 16px;
+  }
+  .final{
+    font-size: 40px;
+  }
+  .final .img1{
+    bottom: -5vh;
+  }
+  .final .img2{
+    bottom: -5vh;
+  }
+}
