@@ -148,7 +148,7 @@ function App() {
               icon="1"
               name="Parroquia Nuestra Señora de la Almudena"
               direction="Plazoleta de la Almudena"
-              hora="17:00 hrs"
+              hora="18:00 hrs"
               direc="https://www.google.com/maps/place/Parroquia+Nuestra+Se%C3%B1ora+de+la+Almudena,+Huayra+Calle+310,+Cusco+08001/data=!4m2!3m1!1s0x916dd5d77d367f55:0xe21f2360a392d83?utm_source=mstt_1&entry=gps&coh=192189&g_ep=CAESBzI0LjQ5LjYYACCenQoqkAEsOTQyMjYwNDAsOTQyNDI1MjksOTQyMjMyOTksOTQyMTY0MTMsOTQyMTI0OTYsOTQyMTI2NjYsOTQyMDczOTQsOTQyMDc1MDYsOTQyMDg1MDYsOTQyMTc1MjMsOTQyMTg2NTMsOTQyMjgyMDQsOTQyMjk4MzksNDcwODcxMTgsNDcwODQzOTMsOTQyMTMyMDBCAlBF&g_st=ac"
             />
           </section>
